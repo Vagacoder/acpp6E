@@ -17,7 +17,8 @@ int main() {
 	infile.open("players.txt");
 
 	int playerNumbers = 0;
-	bool reading = infile >> playerNumbers;
+	bool reading = (bool) (infile >> playerNumbers);
+	cout << playerNumbers << endl;
 	string highName = "";
 	int highScore = 0;
 	if (reading && playerNumbers > 0) {
