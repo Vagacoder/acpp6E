@@ -83,5 +83,7 @@ int main() {
 	} else {
 		cout << "Wrong data!";
 	}
+
+	inFile.close();
 	return 0;
 }
