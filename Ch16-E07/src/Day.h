@@ -1,3 +1,6 @@
+// CH16 ex07
+// header file of DayOfYear
+
 class DayOfYear {
 public:
 	DayOfYear();
