@@ -5,6 +5,8 @@ using namespace std;
 class DayOfYear
 {
 public:
+	DayOfYear();
+	DayOfYear(int newMonth, int newDay);
     void input( );
     void output( );
     void set(int newMonth, int newDay);
@@ -16,6 +18,9 @@ public:
  
     int getMonthNumber( ); //Returns 1 for January, 2 for February, etc.
     int getDay( );
+
+    bool operator < (DayOfYear b);
+
 private:
     int month;
     int day;
@@ -136,7 +141,18 @@ void DayOfYear::output( )
     cout << day;
 }
 
+bool DayOfYear::operator <(DayOfYear b){
+	if ((month > b.month)|| ((month == b.month) && (day > b.day))){
+		return false;
+	} else {
+		return true;
+	}
+}
 
+DayOfYear::DayOfYear():month(1), day(1){
 
+}
 
+DayOfYear::DayOfYear(int newMonth, int newDay):month(newMonth), day(newDay){
 
+	}
