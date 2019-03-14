@@ -9,7 +9,6 @@ template<class T>
 void swapValues(T& variable1, T& variable2)
 {
       T temp;
-
       temp = variable1;
       variable1 = variable2;
 	variable2 = temp;
