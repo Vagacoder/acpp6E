@@ -12,7 +12,7 @@ using namespace std;
 
 namespace SavitchEmployees {
 TitledEmployee::TitledEmployee() :
-		SalariedEmployee(), title(""), salary(0) {
+		SalariedEmployee(), title(""){
 }
 
 TitledEmployee::TitledEmployee(const string& theName, const string& theSsn,
